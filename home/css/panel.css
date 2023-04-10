@@ -1,0 +1,575 @@
+*{
+    margin:0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    direction: rtl;
+    font-family: "Vazir";
+}
+
+@font-face {
+     font-family: "Vazir";
+    src: url("../fonts/Vazir.eot") format("eot");
+}
+
+#panel{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items:flex-start;
+    
+    
+}
+/* RIGHT SIDE */
+
+
+.display-Control{
+    display: none;
+}
+/* right top*/
+.right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%; 
+    height: 100%;
+    background-color: rgb(239, 243, 240);
+}
+
+ @media only screen and (max-width:768px) {
+    .right{
+        width:40%;
+
+    }
+
+}
+
+
+@media only screen and (max-width:1100px) {
+    .right{
+        width:20%;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width:1100px) {
+    .right{
+        width:30%;
+
+    }
+
+}
+
+@media only screen and (max-width:1099px) {
+    .right{
+        width:25%;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .right{
+        width:40%;
+
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .right{
+        width:45%;
+
+    }
+
+}
+@media only screen and (max-width:400px) {
+    .right{
+        width:50%;
+
+    }
+
+}
+
+@media only screen and (max-width:300px) {
+    .right{
+        width:100%;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.user-status{
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    
+    border-bottom: 0.1rem solid  rgb(214, 218, 215);
+    /* border-left: 0.1rem solid rgb(214, 218, 215); */
+} 
+
+.user-status-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.user-status-top i{
+    font-size: 1rem;
+    color: black;
+    margin-right: 5px;
+    
+}
+
+.user-status-top i:hover{
+		cursor:pointer;
+}
+
+.user-status-top-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+.username{
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+.user-status-bottom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    
+}
+
+.user-status-bottom-display{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+}
+
+
+.user-access span{
+    color: gray;
+    font-weight:normal;
+}
+
+.user-connection-status span{
+    color: gray;
+}
+
+
+
+.user-access {
+    margin-bottom: 8px;
+}
+
+.user-connection-status span{
+    font-weight:normal;
+    
+}
+
+.user-connection-status{
+    margin-bottom: 10px;
+}
+
+.user-connection-status #online{
+    font-weight:normal;
+    color: rgb(47, 211, 14);
+}
+
+#access-text{
+    color: blue;
+}
+
+
+/* right bottom*/
+.right-options{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    align-content: center;
+    width: 92%;
+    margin-top: 10%;
+	height: 100vh;
+    
+}
+
+.right-options .item{
+    width: 100vmax;
+  
+ 
+}
+.item{
+
+    text-align: center;
+}
+
+.item:hover{
+    cursor: pointer;
+    background-color: rgb(241, 237, 237);
+    width: 85%;
+
+}
+
+
+
+
+.item i{
+    padding-left: 10px;
+}
+.item{
+  padding: 25px;
+}
+/* .item:hover{
+    background-color: rgb(211, 207, 207);
+} */
+
+.item #one{
+    color: purple;
+    font-size: 1.6rem;
+}
+.item #two{
+    color: blue;
+    font-size: 1.6rem;
+}
+.item #three{
+    color: red;
+    font-size: 1.6rem;
+}
+.item #four{
+    color: orange;
+    font-size: 1.6rem;
+}
+.item #five{
+    color: black;
+    font-size: 1.6rem;
+}
+
+body{
+    background-color: rgb(241, 247, 247);
+
+}
+
+/* ------------- top section ------------- */
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+
+
+}
+
+.left .left-top-up{
+    margin-top: 17px;
+}
+
+.left-top-up{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap:wrap;
+}
+
+.top-l-right{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: white;
+    width:300px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.top-l-left{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-items:center;
+    flex-wrap: wrap;
+    width:10%;
+    height: 100%;
+    
+}
+
+.top-l-left i:hover{
+    color: blue;
+}
+
+	
+
+.top-l-left i {
+    margin: 0px 8px;
+    font-size: 1rem;
+    color: rgb(80, 77, 77);
+    
+}
+
+.left-top-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.left-top-down div {
+    padding: 20px;
+}
+.search input{
+    border: 1px solid rgb(248, 248, 248);
+    background-color: rgb(248, 248, 248);
+    outline: none;
+    width: 100%;
+
+}
+
+
+
+.search i {
+    margin-left: 5px;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+
+.hide-list i {
+    color: blue;
+    font-size: 2.4rem;
+    
+}
+.hide-list i:hover{
+	cursor:pointer;
+}
+
+.search{
+    border: 1px solid rgb(248, 248, 248);
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+
+}
+.search i{
+    padding-left: 5px ;
+}
+h4{
+    color: rgb(228, 20, 20);
+
+}
+
+
+.left-top-down-left a{
+    border: 1px solid rgb(218, 214, 214);
+    background-color: rgb(248, 245, 245);
+    border-radius: 5px;
+    height: 20px;
+    width:55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.left-top-down-right{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-top-down-right i {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.head{
+    background-color: white;
+    
+}
+
+/* SECOND  */
+
+.hold-cards {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent ;
+    width: 100%;
+    
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hold-cards .item{
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 10px;
+    width:9em;
+    background-color: rgb(162, 231, 231);
+    display: flex; 
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    align-content: center;
+}
+
+.item .icon {
+    font-size: 1.2rem;
+    background-color: rgb(214, 208, 208);
+    height: 80px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 22%;
+    border-radius: 2px;
+    
+}
+
+.item .icon  i {
+    margin-right: 9px;
+    color: blue;
+}
+
+
+
+.item-deatails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+    position: relative;
+    right: 10%;
+
+}
+.item-deatails h4{
+    color: blue;
+}
+
+.item-deatails span{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* CHART   */
+
+.hold-chart{
+   
+  background-color: white;
+  width: 1050px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px 0px 0px;
+  justify-content: flex-start;
+   
+}
+.hold-chart-btns{
+    background-color: rgb(226, 220, 220);
+    width:100% ;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+ 
+    
+}
+.hold-chart-btns .right span{
+  margin-left: 80px;
+ 
+}
+
+.hold-chart-btns .right  {
+    background-color: rgb(226, 220, 220);
+
+}
+
+.hold-chart-btns .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  
+}
+
+.hold-chart-btns .left i{
+    margin-left: 10px;
+    font-size: 1.2rem;
+   
+}
+
+.hold-chart-btns .left i:hover{
+    color: blue;
+   
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 25%;
+}
+

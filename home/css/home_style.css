@@ -1,0 +1,702 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Vazir";
+    color: black;
+    animation-duration: 2s;
+}
+
+body{
+    margin:10px 20px 0px 20px;
+    background-color: white(30, 61, 235);
+}
+
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.eot") format("eot");
+}
+
+a:active{
+    color: gray;
+}
+
+
+
+nav{
+   
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-basis: content;
+    height: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li{
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    margin: 2px 15px 14px 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(73, 73, 73); 
+    
+}
+
+
+.bottom_border_style{
+    border-bottom: 2px solid rgb(238, 114, 12);
+    margin-top: 0px;
+}
+
+nav ul{
+
+    position: relative;
+    top: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.btn{
+    
+    border: 1px solid  rgb(73, 73, 73);
+    border-radius: 5px;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+
+}
+
+.btn a h5 {
+    position: relative;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(73, 73, 73);
+
+}
+.btn i{
+    padding:4px;
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+}
+
+
+/* sliders */
+
+.sliders {    
+ 
+    display: block;
+    position: relative;
+   
+}
+
+.btn_slid{
+    border: 8px solid white;
+    border-radius: 100px;
+    margin: 5px;
+    
+}
+
+
+.slides img {
+    border: 1px solid rgb(39, 39, 39);
+    
+    width: 100%;
+    height:470px;
+    display: block;
+   
+}
+
+.IMG_TEXT2,.IMG_TEXT3{
+    display: none;
+}
+
+.acitve{
+    display: block;
+    
+}
+
+.noactive{
+    display: none;
+}
+
+
+:root {
+    --animate-duration: 2s;
+  }
+
+.IMG_TEXT1,.IMG_TEXT2,.IMG_TEXT3{
+    position:  relative;
+    top: 40px;
+    left:10PX;
+    z-index: 1;
+}
+
+div h2{
+	color:white;
+}
+
+.btn2{
+    border: 8px solid rgb(33, 209, 10);
+    border-radius: 100px;
+    margin: 5px;
+  
+} 
+
+
+
+
+
+.btn_slid:hover{
+    border-color:  rgb(33, 209, 10);
+}
+
+.slider_button{
+    
+    position: absolute;
+    top: 85%;
+    left:5%;
+
+    z-index: 1;
+}
+
+
+
+
+
+/*  card */
+.card{
+    
+    margin-top: 10px;
+    margin-bottom: 35px;
+    display:flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap:wrap;
+    width: 100%;
+    max-height:auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.card_item{
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px  gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    height: 270px;
+    width:280px ;
+    position: relative;
+    
+    
+}
+
+.card_item2{
+    height:290px !important;
+}
+
+.card_item img{
+    width: 60% !important;
+    height: 130px;
+  
+}
+
+
+
+.bottom_info .icons i{
+    color: white;
+    padding: 6px;
+   
+    
+}
+
+
+
+#shop_icon{
+    position: relative;
+    top: 8px;
+    left: 3px;
+}
+
+
+
+#heart{
+    position: relative;
+    top: 8px;
+    left: 3px;
+
+}
+#heart:hover{
+    color: red;
+    padding: 6px; 
+    
+    
+}
+
+
+
+.bottom_info .icons #shoping {
+    border: 1px solid #0caf58;
+    border-radius: 100%;
+    background-color: #0caf58;
+    height: 40px;
+    transition: 0.5s;
+    width: 17%;
+}
+
+.bottom_info .icons #shoping:hover   {
+  
+    border-radius: 0%;
+    transition: 0.5s;
+    width: 40%;
+    
+    
+}
+
+
+.bottom_info .icons #shoping:hover #buy_text{
+    display: block;
+}
+
+
+#buy_text{
+    position:relative;
+    left: 38px;
+    bottom: 16px;
+    display:none;
+    color: white;
+}
+
+
+.bottom_info .icons #like_heart {
+    border: 1px solid #0caf58;
+    border-radius: 100%;
+    background-color: #0caf58;
+    height: 40px;
+    transition: 0.5s;
+    width: 17%;
+}
+
+.bottom_info .icons #like_heart:hover {
+
+    border-radius: 0%;
+    transition: 0.5s;
+    width: 40%;
+}
+.bottom_info .icons #like_heart:hover #like_text{
+    display: block;
+    
+}
+#like_text{
+    position:relative;
+    left: 38px;
+    bottom: 16px;
+    display:none;
+    color: white;
+}
+
+
+
+.bottom_info{
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+  
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    
+}
+
+.icons #like_heart{
+    margin-left: 10px;
+}
+
+
+
+.card_item img {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.star{
+    display: flex;
+    justify-content:space-between;
+    width: 250px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+ 
+    
+}
+
+.star-color{
+    color: orange;
+}
+
+
+.offer::before{
+    content: "تخفیف ویژه";
+    color: RED;
+}
+.offer{
+    color: red;
+    position: relative;
+    left: 14px;
+}
+
+.star-button{
+    border: none;
+    background-color:white;
+}
+
+
+
+.bottom_info .cost {
+    margin: 0px 0px 0px 20px;
+    color: black;
+}
+
+
+@media only screen and (max-width:640px) {
+    .card{
+        left:25%;
+
+    }
+
+}
+
+
+@media only screen and (max-width:600px) {
+    .card{
+        left:18%;
+      
+
+    }
+
+}
+
+
+/* OFFER TIMER  */
+.super_offer{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    max-height: 500px;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    max-height: 100%;
+}
+
+
+
+.time_offer{
+    box-shadow: 0px 2px 8px 0px  gray;
+    width: 900px;
+    height: 350px;
+}
+
+#special_offer_text{
+    border: 9px solid rgb(253, 120, 10);
+    border-radius: 50px;
+    background-color: rgb(253, 120, 10);
+    color: white;
+    position: relative;
+    left: 42%;
+    
+}
+
+
+
+.offer_items{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 8%;
+    height: auto;
+
+
+}
+
+#special_image_offer{
+    width: 50px;
+    height: 250px;
+    position: relative;
+    flex: 1;
+}
+.offer_percent_price_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 0%;
+    
+}
+
+.title_special_offer{
+    position: relative;
+    left: 20%;
+    top:15px;
+    display: flex;
+    flex-direction: column;
+    height: 200px ;
+    flex: 2;
+}
+.offer_title{
+    display: flex;
+    flex-direction: column;
+}
+
+.offer_percent{
+    width: 120px;
+    text-align: center;
+    margin: 0px 82px 0px 0px;
+    border: 2px solid rgb(253, 120, 10);
+    border-radius: 50px;
+    background-color: rgb(253, 120, 10);
+    color: white;
+}
+
+.price_offer{
+    color: rgb(119, 117, 117);
+}
+
+.title_offer_text{
+    position: absolute;
+    top: 25%;
+    right: 64%;
+    font-size: 20px;
+   
+ 
+}
+
+.time_offer_counter{   
+    position: relative;
+    top: 40%;
+    left: 0%;
+    width: 300px;
+}
+.time{
+    position: relative;
+    left: 22%;
+    font-size: 30px;
+    color: rgb(119, 117, 117);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+   
+}
+
+.time_offer_counter h4{
+    color: rgb(194, 194, 194);
+    position: relative;
+    left: 20%;
+
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+    #banenr_image{
+    
+        position: relative;
+        top: 4%;
+        right:6%;
+       
+    }
+
+}
+
+
+#banenr_image{
+    
+    width: 80%;
+    height: 350px;
+    box-shadow: 0px 4px 8px 0px  gray;
+    border-radius: 5%;
+}
+
+
+ /*  DRAGABLE LIST   */
+
+.owl-carousel .item:hover {
+		cursor:grab;
+		cursor: -webkit-grab;
+	 }
+	 
+	 
+ .offer i{
+     color: red;
+ }
+
+
+ .owl-stage-outer{
+     direction: ltr;
+ }
+
+ /* .dragble-list{
+  
+    
+ } */
+ 
+.title{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   font-size: 1.3em;
+
+   color:  rgb(119, 117, 117);
+   
+}
+
+.title span{
+    border-bottom:2px solid red(172, 58, 58);
+    margin-top: 2%;
+
+}
+
+
+/* FOOTER */
+
+footer{
+    direction: rtl;
+    background-color: dimgrey;
+    color: white;
+
+    
+}
+
+.main-about{
+    padding: 40px;
+}
+
+footer .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: white;
+
+}
+
+
+@media only screen and (max-width:600px) {
+    .title2{
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    .left{
+        position: relative;
+        right: 4% !important;
+        top: 5%;
+    }
+
+}
+
+
+
+
+
+
+.descr{
+    font-size: 14px;
+    color:white;
+	text-justify: inter-word;
+    text-align: justify;
+}
+
+
+
+.copy-right{
+    background-color: rgb(75, 73, 73);
+    text-align: center;
+    height: 50px;
+    
+}
+
+.copy-right span i{
+    color:white ;
+}
+
+.copy-right span{
+    position: relative;
+    top: 24%;
+    color: white;
+}
+
+
+.social a i{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.social a{
+    padding: 20px;
+}
+
+.social{
+    margin-top: 10%;
+    position: relative;
+    left: 8%;
+    
+}
+
+.left{
+    position: relative;
+    right: 15%;
+
+}
+.left .title{
+    position: relative;
+    left: 4%;
+    font-size: 18px;
+}
+
+#telegram:hover{
+    color: rgb(20, 56, 173);
+}
+
+#instagram:hover{
+    color:rgb(236, 78, 16) ;
+}
+
+#facebook:hover{
+    color:rgb(16, 49, 236) ;
+}
+
+#youtube:hover{
+    color:red ;
+}
+#whatsapp:hover{
+    color:green ;
+}
+
+

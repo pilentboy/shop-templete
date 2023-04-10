@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+     integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    
+    <link rel="stylesheet" href="./css/panel.css">
+	
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+     />
+
+</head>
+
+
+
+
+<body >
+    <div  id="panel">
+        <div class="right">
+            <div class="user-status">
+                <div class="user-status-top">
+                    <img class="user-status-top-img" src="./panel-images/155328262_618384482700733_5640153314170498184_n.jpg" alt="user-image">
+                    <div class="usernameAndDisplayButton">
+                        <span class="username">مهدی ابراهیمی</span>
+    
+                        <i onclick="displayStatus()" 
+                        class="bi bi-arrow-down-circle-fill arrow"></i>   
+                    </div>
+                                    
+                </div>
+                <div class="user-status-bottom-display">
+                    <div class="user-status-bottom">
+                        <div class="user-access">
+                            <span>سطح دسترسی :  &nbsp; &nbsp; &nbsp;  </span>
+                            <span id="access-text"> ادمین</span>
+                        </div>
+                        <div class="user-connection-status">
+                            <span >وضعیت :  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp;</span>
+                            <span id="online">آنلاین</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="right-options">
+                <div class="item ">
+                    <i  id="one" class="bi bi-box"></i>
+                    <span class="options-title">محصولات</span>
+                </div>
+                <div class="item ">
+                    <i id="two"  class="bi bi-cart2"></i>
+                    <span class="options-title" >فروشگاه</span>
+                </div>
+                <div class="item ">
+                    <i  id="three" class="bi bi-trophy"></i>
+                    <span class="options-title" >قرعه کشی</span>
+                </div>
+                <div class="item ">
+                    <i id="four"  class="bi bi-flag"></i>
+                    <span class="options-title">گزارش ها</span>
+                </div>
+                <div class="item ">
+                    <i id="five" class="bi bi-headset"></i>
+                    <span class="options-title">پشتیبانی</span>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="left">
+            <div class="head">
+                <div class="left-top-up">
+
+                    <div class="top-l-right">
+                        <div class="hide-list">
+                        
+                            <i onclick="controlRightDisplayStatus()" class="bi bi-list hide-show"></i>
+                         
+                        </div>
+                        <div class="search">
+                                <input type="text" >
+                               <a href="#">
+                                <i class="bi bi-search" title="search"></i>
+                               </a> 
+                        </div>
+                       
+                    </div>
+    
+                    <div class="top-l-left"  >
+                      <a href="#" class="">
+                        <i class="bi bi-power quit"></i>
+                      </a> 
+                      <a href="#">
+                        <i class="bi bi-gear-fill"></i>
+                      </a> 
+                      <a href="#">
+                        <i class="bi bi-bell-fill"></i>
+                      </a> 
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="left-top-down">
+                        <div class="left-top-down-right">
+                            <h4>آخرین ورود بیش از یک هفته </h4>
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <div class="left-top-down-left">
+                            <a href="#">
+                                فارسی
+                            </a>
+                        </div>
+            </div>
+           
+            </div>
+            <div class="hold-cards">
+               <div class="item">
+                   <div class="icon">
+                    <i  class="bi bi-card-checklist"></i>
+                   </div>
+                   <div class="item-deatails">
+                       <h4>تکمیل انبار</h4>
+                       <span>400</span>
+                   </div>
+               </div>
+               <div class="item">
+                <div class="icon">
+                 <i  class="bi bi-card-checklist"></i>
+                </div>
+                <div class="item-deatails">
+                    <h4>تکمیل انبار</h4>
+                    <span>400</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                 <i  class="bi bi-card-checklist"></i>
+                </div>
+                <div class="item-deatails">
+                    <h4>تکمیل انبار</h4>
+                    <span>400</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                 <i  class="bi bi-card-checklist"></i>
+                </div>
+                <div class="item-deatails">
+                    <h4>تکمیل انبار</h4>
+                    <span>400</span>
+                </div>
+            </div>
+            </div>
+           
+            <div class="hold-chart">
+
+                <div class="hold-chart-btns">
+                       <div class="right">
+                           <span>درآمد</span>
+                       </div>
+                       <div class="left">
+                           <a href="#"><i class="bi bi-gear-fill"></i> </a>    
+                           <a href="#"><i class="bi bi-arrow-clockwise"></i></a>  
+                                      
+                         </div>
+                 </div>
+                 <div class="content">
+                        <canvas id="myChart"  width="300" height="150" >
+                        </canvas>
+                    </div>
+            </div>
+           
+            
+        </div>
+    </div>
+    
+   
+
+
+    
+    <script src="./script/panel.js"></script>
+
+</body>
+</html>
